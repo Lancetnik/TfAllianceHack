@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:5
+    container_name: bot_redis
+    ports:
+      - 6379:6379
+    networks:
+      - tg_bot
+
+  postgres:
+    image: postgres:14
+    container_name: bot_postgres
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=bot
+    networks:
+      - tg_bot
+
+networks:
+  tg_bot:
+    driver: bridge

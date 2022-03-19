@@ -1,0 +1,6 @@
+-r requirements.txt
+
+loguru==0.5.3
+flake8
+autopep8
+python-lsp-server

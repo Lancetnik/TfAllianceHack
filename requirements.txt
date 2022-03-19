@@ -1,0 +1,6 @@
+aiogram==2.19
+ormar==0.10.24
+propan==0.0.3.6
+aioredis==2.0.1
+asyncpg==0.25.0
+alembic==1.7.6

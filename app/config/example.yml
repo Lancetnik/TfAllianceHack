@@ -1,0 +1,20 @@
+API_TOKEN: ''
+
+REDIS:
+  HOST: 'localhost'
+  PORT: '6379'
+
+DB:
+  USER: 'postgres'
+  PASSWORD: 'postgres'
+  HOST: 'localhost'
+  PORT: 5433
+  NAME: 'bot'
+
+WEBHOOK:
+  PATH: ""
+  URL: "https://23a4-188-170-73-61.ngrok.io"
+
+WEBAPP:
+  HOST: '127.0.0.1'
+  PORT: 5000
