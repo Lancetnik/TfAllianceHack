@@ -41,7 +41,7 @@ async def process_start_command(message: types.Message, state: FSMContext):
     if user.is_admin:
         await adm_states.AdminState.base.set()
 
-    if (user.is_admin and user.is_owner) is False:
+    if (user.is_admin or user.is_owner) is False:
         await senders.send_welcome(user)
         await usr_states.UserState.base.set()
 

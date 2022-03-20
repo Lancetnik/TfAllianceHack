@@ -32,4 +32,5 @@ async def send_to_admins(filters, message):
             parse_mode='html',
             reply_markup=construct_inline_keyboard({
                     adm_commands.REPLY.name: f'{adm_commands.REPLY.text}{message.message_id}_{message.chat.id}',
+                    adm_commands.CHAT.name: f'{adm_commands.CHAT.text}{message.message_id}_{message.chat.id}',
             }))
